@@ -1,11 +1,14 @@
 import axios from "axios";
 
+// import base url from .enve file 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 /**
  * Central Axios instance - all API calls use this
  * baseURL is proxied through Vite to avoid CORS during development
  */
 const apiClient = axios.create({
-  baseURL: "/api",
+  baseURL:  API_BASE_URL + "/api",
   headers: {
     "Content-Type": "application/json",
   },
