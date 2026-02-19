@@ -15,7 +15,8 @@ connectDB();
 
 // ─── Middleware ────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: "http://localhost:5173", // Vite dev server
+  // origin: "http://localhost:5173", // Vite dev server
+  origin: "https://bnv-assignment-kappa.vercel.app", // Vite prod server
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"],
 }));
