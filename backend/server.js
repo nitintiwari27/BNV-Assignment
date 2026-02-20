@@ -17,7 +17,7 @@ connectDB();
 app.use(cors({
   // origin: "http://localhost:5173", // Vite dev server
   // origin: "https://bnv-assignment-kappa.vercel.app", // Vite prod server
-  origin: ["http://localhost:5173", "https://bnv-assignment-kappa.vercel.app"], // Allow all origins (for testing, adjust in production)
+  origin: ["http://localhost:5173", "https://bnv-dash.vercel.app/", "https://bnv-assignment-kappa.vercel.app"], // Allow all origins (for testing, adjust in production)
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"],
 }));
